@@ -25,7 +25,9 @@
             "error",
             "always"
         ],
-        "no-console":"off"
+        "no-console": "off",
+        "no-trailing-spaces": "error",
+        "no-multiple-empty-lines": "error"
     },
     
     "parser": "babel-eslint"
