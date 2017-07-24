@@ -1,12 +1,7 @@
-module.exports = {
-    database: "shopaholic",
-    username: "",
-    password: "",
-    params: {
-        dialect: "sqlite",
-        storage: "shopaholic.sqlite",
-        define: {
-            underscored: true
-        }
-    },
+module.exports = app => {
+    const env = process.env.NODE_ENV;
+    if (env) {
+        return require(`./config.${env}.js`);
+    }
+    return require("./config.development.js");
 };
