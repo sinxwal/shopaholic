@@ -65,9 +65,10 @@
         "radix": true,
         "semicolon": [true, "always"],
         "switch-default": true,
-
-        "trailing-comma": false,
-
+        "trailing-comma": [
+            true,
+            { "multiline": "always" }
+        ],
         "triple-equals": [ true, "allow-null-check" ],
         "typedef": [
             true,
@@ -95,5 +96,6 @@
             "check-type",
             "check-typecast"
         ]
-    }
+    },
+    "defaultSeverity": "warning"
 }
