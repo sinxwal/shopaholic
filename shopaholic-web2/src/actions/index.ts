@@ -1,5 +1,9 @@
 import * as consts from '../consts';
 
+export interface Action {
+    type: string;
+    payload?: object;
+}
 export interface IncrementEnthusiasm {
     type: consts.INCREMENT_ENTHUSIASM;
 }
@@ -19,5 +23,11 @@ export function incrementEnthusiasm(): IncrementEnthusiasm {
 export function decrementEnthusiasm(): DecrementEnthusiasm {
     return {
         type: consts.DECREMENT_ENTHUSIASM,
+    };
+}
+
+export function requestIp(): Action {
+    return {
+        type: consts.REQUEST_IP,
     };
 }

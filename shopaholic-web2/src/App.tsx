@@ -15,7 +15,7 @@ class App extends React.Component<Props, object> {
                     <img src={logo} className="App-logo" alt="logo" />
                     <h2>Welcome to React</h2>
                 </div>
-                <Hello />,
+                <Hello />
             </div>
         );
     }
